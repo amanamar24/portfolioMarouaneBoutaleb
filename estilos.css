@@ -1,0 +1,16 @@
+h1.lema{
+    background-color: #71C894;
+
+}
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    margin-left: 100px;
+}
+
+li a{
+    text-decoration: none;
+}
