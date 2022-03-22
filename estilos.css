@@ -1,27 +1,26 @@
-h1.lema{
-    background-color: #71C894;
-    color:whitesmoke;
-
+h1.lema {
+  background-color: #71c894;
+  color: whitesmoke;
 }
-ul{
-    list-style: none;
-}
-
-li{
-    display: inline;
-    margin-left: 100px;
+ul {
+  list-style: none;
 }
 
-li a{
-    text-decoration: none;
+li {
+  display: inline;
+  margin-left: 100px;
 }
-img.chooseveg{
-  width:200px !important ;
+
+li a {
+  text-decoration: none;
 }
-div.link{
-  float:left;
+img.chooseveg {
+  width: 200px !important ;
 }
-div.header_menu{
+div.link {
+  float: left;
+}
+div.header_menu {
   padding-top: 5px;
 }
 .container_post {
@@ -33,31 +32,22 @@ div.header_menu{
   margin-left: 144px;
   margin-right: 144px;
 }
-.container{
+.container {
   padding: 0 140px;
   padding-top: 20px;
 }
 
 .hero--post {
-    display: block;
-    padding: 0;
+  display: block;
+  padding: 0;
 }
 
-@media (min-width: 720px){
-  .container_post {
-    max-width: 1024px;
-  }
-}
-
-
-@media (min-width: 720px){
+@media (min-width: 720px) {
   .hero {
     height: 60vh;
     max-height: 570px;
   }
-
 }
-
 
 .hero {
   background-position: center top;
@@ -84,7 +74,7 @@ div.header_menu{
   min-height: 320px;
   height: 330px;
 }
-.header_icono{
+.header_icono {
   position: fixed;
   top: 0;
   width: 100%;
@@ -100,28 +90,71 @@ div.header_menu{
   padding-bottom: 100px;
 }
 
-
 /* del h3 */
 .share--vertical .share__title {
-    -webkit-transform: rotate(
--90deg
-);
-    transform: rotate(
--90deg
-);
-    display: block;
-    width: 1em;
-    margin: 0 auto;
-    text-align: center;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  display: block;
+  width: 1em;
+  margin: 0 auto;
+  text-align: center;
 }
 
-h1.lema:hover{
-
+h1.lema:hover {
   /* transform: rotate(90deg); */
   animation: mymove 10s infinite;
   animation-direction: alternate-reverse;
 }
 @keyframes mymove {
-  from {transform: rotateZ(0deg);}
-  to {transform: rotateZ(360deg);}
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
+
+/* burger menu */
+
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #5f4646;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .container_post {
+    /* padding-top: 48px;
+    padding-bottom: 48px;
+    background: #fff;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 144px; */
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/* @media (min-width: 720px) {
+  .container_post {
+    max-width: 1024px;
+  }
+} */

@@ -3,6 +3,11 @@
   <head>
     <link rel="stylesheet" href="estilos.css" />
     <!-- <script type="text/javascript" src="estilos.js"></script> -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="header_icono">
@@ -20,12 +25,14 @@
         </a>
       </div>
       <div class="header_menu">
-        <nav>
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="switch.html">switch</a></li>
-            <li><a href="community.html">community</a></li>
-          </ul>
+        <nav class="topnav" id="myTopnav">
+          <a href="home.html">Home</a>
+          <a href="switch.html">switch</a>
+          <a href="community.html">Community</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </div>
     </div>
